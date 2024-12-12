@@ -1,0 +1,55 @@
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: lightgray;
+}
+
+.header-logo{
+    width: 6vw;
+    height: auto;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-container > div{
+    position: relative;
+}
+
+.menu-container > div > ul{
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: rgba(211, 211, 211, 0.5);
+    width: max-content;
+    
+}
+
+.menu-container > div:hover > ul, .menu-container > div > ul:hover{
+    display: block;
+}
+
+.menu-title{
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+    padding: 50% 0;
+}
+
+.dropdown{
+    list-style: none;
+}
+
+.dropdown-item{
+    text-decoration: none;
+    color: black;
+    text-wrap: nowrap;
+    display: block;
+    padding: .5rem .5rem;
+}
