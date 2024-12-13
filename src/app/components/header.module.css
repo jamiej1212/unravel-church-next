@@ -1,0 +1,137 @@
+/* -------------------------------[ header.tsx ]------------------------------------ */
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1rem 1rem;
+    background-color: white;
+}
+
+.header-logo{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.menu-container > div{
+    position: relative;
+}
+
+.menu-container > div > ul{
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: auto;
+    white-space: nowrap;
+}
+
+.menu-container > div:hover > ul, .menu-container > div > ul:hover{
+    display: block;
+}
+
+.menu-title{
+    text-decoration: none;
+    color: var(--font);
+    text-wrap: nowrap;
+    display: none;
+}
+
+.menu-title:hover{
+    color: var(--foreground);
+}
+
+.dropdown{
+    list-style: none;
+}
+
+.dropdown-item{
+    text-decoration: none;
+    color: var(--font);
+    text-wrap: nowrap;
+    display: block;
+    padding: 0.1rem .5rem;
+    font-size: 0.8rem;
+}
+
+.dropdown-item:hover{
+    background-color: var(--foreground);
+    color: white;
+}
+
+/* -------------------------------[ dropdown.tsx ]------------------------------------ */
+.nav-container{
+    position: relative;
+    
+}
+.nav-bar{
+    cursor: pointer;
+    padding: .7rem;
+}
+.list-container{
+    cursor: pointer;
+    position: absolute;
+    margin-right: -1rem;
+    right: 0;
+    list-style: none;
+    background-color: rgba(211, 211, 211, 0.5);
+    color: var(--font);
+}
+
+.nav-list{
+    padding: .5rem 1rem;
+}
+
+/* -------------------------------[ media queries ]------------------------------------ */
+
+/* Mobile Phones - flex-direction: column-reverse */
+@media (min-width: 320px) {
+    
+  }
+  
+  /* Larger Mobile Phones - flex-direction: column-reverse */
+  @media (min-width: 480px) {
+    
+  
+  }
+  
+  /* Tablets Portrait - flex-direction: row */
+  @media (min-width: 768px) {
+    .outer-container{
+        flex-direction: row;
+    }
+
+    .menu-title{
+        display: flex;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+  }
+  
+  /* Tablets Landscape / Small Laptops */
+  @media (min-width: 1024px) {
+    
+  }
+  
+  /* Laptops / Small Desktops */
+  @media (min-width: 1280px) {
+    
+  }
+  
+  /* Large Desktops */
+  @media (min-width: 1440px) {
+    
+  }
+  

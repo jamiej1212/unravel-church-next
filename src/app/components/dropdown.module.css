@@ -1,0 +1,18 @@
+/* -------------------------------[ dropdown.tsx ]------------------------------------ */
+.nav-container{
+    position: relative;
+    
+}
+.nav-bar{
+    cursor: pointer;
+}
+.list-container{
+    cursor: pointer;
+}
+
+.nav-bar:active > .list-container{
+    position: absolute;
+    text-align: right;
+    border: 1px solid red;
+    right: 0;
+}
