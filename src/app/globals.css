@@ -2,6 +2,16 @@
   --background: white;
   --foreground: #a8b89e;
   --font: #63625b;
+
+  /* Swiper - pagination */
+  --swiper-pagination-color: white;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-inactive-color: lightgray;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
 }
 
 html,
@@ -15,18 +25,28 @@ body {
 }
 
 * {
+  --background: #ffffff;
+}
+
+html{
+  font-size: 100%;
   box-sizing: border-box;
-  padding: 0;
+}
+
+body{
   margin: 0;
+  padding: 0;
+  font-family: SourseSans;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+*, *::before, *::after{
+  box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.container{
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }

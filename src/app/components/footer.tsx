@@ -12,7 +12,6 @@ export default function Footer(){
         <div className={styles['outer-container']}>
             <div className={styles['main-inner-container']}>
                 <h3>Unravel Church</h3>
-                <br/>
                 <p>5883 Eden Park Pl, San Jose, CA 95138</p>
                 <p>Rear Entrance of Gateway City Church</p>
                 <div className={styles['icon-container']}>
@@ -26,24 +25,24 @@ export default function Footer(){
             <div className={styles['sub-inner-container']}>
                 <div className={styles['inner-container']}>
                     <br/>
-                    <p><Link href="/">About Us</Link></p>
-                    <p><Link href="/">Leadership</Link></p>
-                    <p><Link href="/">History</Link></p>
-                    <p><Link href="/">Our Covering</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">About Us</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">Leadership</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">History</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">Our Covering</Link></p>
                 </div>
                 <div className={styles['inner-container']}>
                     <br/>
-                    <p><Link href="/">Inner Healing</Link></p>
-                    <p><Link href="/">Intercessory Prayer</Link></p>
-                    <p><Link href="/">Worship</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">Inner Healing</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">Intercessory Prayer</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">Worship</Link></p>
                 </div>
                 <div className={styles['inner-container']}>
                     <br/>
-                    <p><Link href="/">Contact Us</Link></p>
-                    <p><Link href="/">Events</Link></p></div>
+                    <p><Link className={styles['sub-link']} href="/">Contact Us</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">Events</Link></p></div>
                 <div className={styles['inner-container']}>
                     <br/>
-                    <p><Link href="/">Give</Link></p>
+                    <p><Link className={styles['sub-link']} href="/">Give</Link></p>
                 </div>
             </div>
         </div>

@@ -23,6 +23,18 @@
 .inner-container{
     display: flex;
     flex-direction: column;
+    
+}
+
+.inner-container > p {
+    margin-top: -.2rem;
+}
+
+.sub-link{
+    text-decoration: none;
+    color: var(--font);
+    margin-top: -1rem;
+    max-height: 1rem;
 }
 
 .icon-container{
@@ -31,6 +43,8 @@
 
 .icons{
     margin-right: .5rem;
+    text-decoration: none;
+    color: var(--font);
 }
 
 /* -------------------------------[ media queries ]------------------------------------ */
