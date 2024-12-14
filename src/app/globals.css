@@ -1,6 +1,7 @@
 :root {
   --background: white;
   --foreground: #a8b89e;
+  --darker-foreground: #6b7565;
   --font: #63625b;
 
   /* Swiper - pagination */

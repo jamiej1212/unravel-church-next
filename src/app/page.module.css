@@ -1,10 +1,159 @@
 .swiper-slider{
     width: 100%;
-    height: 50vh;
+    height: 30vh;
 }
 
 .swiper-image{
     width: 100%;
     height: 100%;
     object-fit: fill;
+}
+
+.welcome-message{
+    text-align: center;
+    color: var(--font);
+    height: 10rem;
+}
+
+.welcome-message-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-message-container h1, .welcome-message-container p{
+    margin: .3rem;
+}
+
+.quick-info{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.quick-info-title{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--font);
+    background-color: var(--foreground);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.quick-info-contents{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--foreground);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info-bar{
+    background-color: var(--foreground);
+    margin-top: 1rem;
+    width: 10vw;
+    height: .5rem;
+}
+
+.quick-info-contents > div{
+    background-color: white;
+    box-shadow: 3px 3px 3px var(--darker-foreground);
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: 0 1rem;
+    color: var(--font);
+    flex: 1;
+    border-radius: 5px;
+}
+
+.quick-info-contents > div > h2{
+    margin-top: .5rem;
+}
+
+.pastor-btn{
+    display: block;
+    width: fit-content;
+    text-wrap: nowrap;
+    border: none;
+    background-color: var(--darker-foreground);
+    color: white;
+    border-radius: 10px;
+    padding: .3rem .5rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+.pastor-btn:hover{
+    background-color: #8d9985;
+    color: var(--font);
+}
+
+.event-outer-container{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.event-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.event-list > h4{
+    font-style: italic;
+    margin: .5rem 0;
+}
+
+.event-list > p{
+    margin-top: .5rem;
+}
+
+.event-pic{
+    max-width: 100%;
+    height: auto;
+}
+/* -------------------------------[ media queries ]------------------------------------ */
+
+/* Mobile Phones - flex-direction: column-reverse */
+@media (min-width: 320px) {
+    .quick-info-contents{
+        flex-direction: column;
+    }
+
+    .quick-info-contents > div{
+        margin-bottom: 1rem;
+    }
+
+}
+
+/* Larger Mobile Phones - flex-direction: column-reverse */
+@media (min-width: 480px) {
+  
+
+}
+
+/* Tablets Portrait - flex-direction: row */
+@media (min-width: 768px) {
+  
+}
+
+/* Tablets Landscape / Small Laptops */
+@media (min-width: 1024px) {
+  
+}
+
+/* Laptops / Small Desktops */
+@media (min-width: 1280px) {
+  
+}
+
+/* Large Desktops */
+@media (min-width: 1440px) {
+  
 }
