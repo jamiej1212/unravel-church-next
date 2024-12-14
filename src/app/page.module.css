@@ -134,13 +134,17 @@
 
 /* Larger Mobile Phones - flex-direction: column-reverse */
 @media (min-width: 480px) {
-  
+    .swiper-slider{
+        height: 70vh;
+    }
 
 }
 
 /* Tablets Portrait - flex-direction: row */
 @media (min-width: 768px) {
-  
+    .quick-info-contents{
+        flex-direction: row;
+    }
 }
 
 /* Tablets Landscape / Small Laptops */

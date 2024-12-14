@@ -23,7 +23,7 @@ export default function Header() {
 
     const planAVisit = [
         { id: 1, name: 'Contact Us', path: '/' },
-        { id: 2, name: 'Events', path: '/' }
+        { id: 2, name: 'Events', path: '/eventpage' }
     ];
 
     return (
@@ -71,10 +71,11 @@ export default function Header() {
                     <div>
                         <Link className={styles['menu-title']} href="/">Give</Link>
                     </div>
-
+                    <div>
                     <DropDown />
+                    </div>
+                    
                 </div>
-                
             </div>
             
         </>

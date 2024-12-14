@@ -4,6 +4,10 @@
     justify-content: space-between;
     padding: 0.1rem 1rem;
     background-color: white;
+    height: 3rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 .header-logo{
@@ -20,7 +24,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1rem;
-    max-width: 100%;
+    width: 100%;
 }
 
 .menu-container > div{
@@ -29,11 +33,14 @@
 
 .menu-container > div > ul{
     padding: 0;
+    margin: 0;
+    top: 100%;
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     width: auto;
     white-space: nowrap;
+    z-index: 100;
 }
 
 .menu-container > div:hover > ul, .menu-container > div > ul:hover{
@@ -45,6 +52,7 @@
     color: var(--font);
     text-wrap: nowrap;
     display: none;
+    height: 3rem;
 }
 
 .menu-title:hover{
@@ -61,7 +69,6 @@
     text-wrap: nowrap;
     display: block;
     padding: 0.1rem .5rem;
-    font-size: 0.8rem;
 }
 
 .dropdown-item:hover{
@@ -69,28 +76,6 @@
     color: white;
 }
 
-/* -------------------------------[ dropdown.tsx ]------------------------------------ */
-.nav-container{
-    position: relative;
-    
-}
-.nav-bar{
-    cursor: pointer;
-    padding: .7rem;
-}
-.list-container{
-    cursor: pointer;
-    position: absolute;
-    margin-right: -1rem;
-    right: 0;
-    list-style: none;
-    background-color: rgba(211, 211, 211, 0.5);
-    color: var(--font);
-}
-
-.nav-list{
-    padding: .5rem 1rem;
-}
 
 /* -------------------------------[ media queries ]------------------------------------ */
 
@@ -113,10 +98,7 @@
 
     .menu-title{
         display: flex;
-    }
-
-    .nav-bar{
-        display: none;
+        align-items: center;
     }
   }
   

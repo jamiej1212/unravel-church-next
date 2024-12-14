@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import EventPage from './eventpage/page';
+
 import styles from "./page.module.css";
 import mainOne from './assets/main-1.jpg';
 import mainTwo from './assets/main-2.jpg';
 import mainThree from './assets/main-3.jpg';
 import mainFour from './assets/main-4.jpg';
-import eventPic from './assets/contactus-1.jpg';
 
 // Swiper import
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -93,27 +94,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles['event-outer-container']}>
-        <h3>UPCOMING EVENTS</h3>
-        <div className={styles['event-container']}>
-          <div className={styles['event-list']}>
-            <Image className={styles['event-pic']} src={eventPic} alt=""/>
-            <h4>Event Title</h4>
-            <p>Event Desc</p>
-          </div>
-          <div className={styles['event-list']}>
-            <Image className={styles['event-pic']} src={eventPic} alt=""/>
-            <h4>Event Title</h4>
-            <p>Event Desc</p>
-          </div>
-          <div className={styles['event-list']}>
-            <Image className={styles['event-pic']} src={eventPic} alt=""/>
-            <h4>Event Title</h4>
-            <p>Event Desc</p>
-          </div>
-        </div>
-        
-      </section>
+      <EventPage />
     </div>
   );
 }

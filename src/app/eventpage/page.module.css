@@ -1,0 +1,78 @@
+.event-page-title{
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    margin-left: 10%;
+}
+
+.event-container{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1rem;
+    display: grid;
+}
+
+.event-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-details{
+    text-decoration: none;
+    color: var(--font);
+}
+
+.event-pic{
+    width: 80%;
+    height: auto;
+}
+
+.event-title{
+    text-decoration: none;
+    color: var(--font);
+}
+
+/* -------------------------------[ media queries ]------------------------------------ */
+
+/* Mobile Phones - flex-direction: column-reverse */
+@media (min-width: 320px) {
+    
+}
+
+/* Larger Mobile Phones - flex-direction: column-reverse */
+@media (min-width: 480px) {
+  
+
+}
+
+/* Tablets Portrait - flex-direction: row */
+@media (min-width: 768px) {
+    .event-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: fit-content;
+    }
+    .event-items{
+        width: 100%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .event-pic{
+        width: 90%;
+    }
+}
+
+/* Tablets Landscape / Small Laptops */
+@media (min-width: 1024px) {
+  
+}
+
+/* Laptops / Small Desktops */
+@media (min-width: 1280px) {
+  
+}
+
+/* Large Desktops */
+@media (min-width: 1440px) {
+  
+}
