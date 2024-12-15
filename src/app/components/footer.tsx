@@ -26,24 +26,24 @@ export default function Footer(){
             <div className={styles['sub-inner-container']}>
                 <div className={styles['inner-container']}>
                     <br/>
-                    <p><Link className={styles['sub-link']} href="/">About Us</Link></p>
-                    <p><Link className={styles['sub-link']} href="/">Leadership</Link></p>
-                    <p><Link className={styles['sub-link']} href="/">History</Link></p>
-                    <p><Link className={styles['sub-link']} href="/">Our Covering</Link></p>
+                    <p><Link className={styles['sub-link']} href="/about">About Us</Link></p>
+                    <p><Link className={styles['sub-link']} href="/leadership">Leadership</Link></p>
+                    <p><Link className={styles['sub-link']} href="/history">History</Link></p>
+                    <p><Link className={styles['sub-link']} href="/our-covering">Our Covering</Link></p>
                 </div>
                 <div className={styles['inner-container']}>
                     <br/>
-                    <p><Link className={styles['sub-link']} href="/">Inner Healing</Link></p>
-                    <p><Link className={styles['sub-link']} href="/">Intercessory Prayer</Link></p>
-                    <p><Link className={styles['sub-link']} href="/">Worship</Link></p>
+                    <p><Link className={styles['sub-link']} href="/inner-healing">Inner Healing</Link></p>
+                    <p><Link className={styles['sub-link']} href="/intercessory-prayer">Intercessory Prayer</Link></p>
+                    <p><Link className={styles['sub-link']} href="/worship">Worship</Link></p>
                 </div>
                 <div className={styles['inner-container']}>
                     <br/>
-                    <p><Link className={styles['sub-link']} href="/">Contact Us</Link></p>
-                    <p><Link className={styles['sub-link']} href="/">Events</Link></p></div>
+                    <p><Link className={styles['sub-link']} href="/contact">Contact Us</Link></p>
+                    <p><Link className={styles['sub-link']} href="/eventpage">Events</Link></p></div>
                 <div className={styles['inner-container']}>
                     <br/>
-                    <p><Link className={styles['sub-link']} href="/">Give</Link></p>
+                    <p><Link className={styles['sub-link']} href="/give">Give</Link></p>
                 </div>
             </div>
         </div>

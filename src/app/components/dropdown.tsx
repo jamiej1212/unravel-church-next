@@ -42,16 +42,16 @@ const DropDown: React.FC = () => {
             {showComponent && (
                 <ul className={styles['list-container']}>
                     <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Home</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">About Us</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Leadership</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">History</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Our Covering</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Inner Healing</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Intercessory Prayer</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Worship</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Contact Us</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Events</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Give</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/about">About Us</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/leadership">Leadership</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/history">History</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-covering">Our Covering</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/inner-healing">Inner Healing</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/intercessory-prayer">Intercessory Prayer</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/worship">Worship</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/contact">Contact Us</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/eventpage">Events</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/give">Give</Link></li>
                 </ul>
             )}
         </div>

@@ -9,20 +9,20 @@ import DropDown from './dropdown';
 
 export default function Header() {
     const about = [
-        { id: 1, name: 'About Us', path: '/' },
-        { id: 2, name: 'Leadership', path: '/' },
-        { id: 3, name: 'History', path: '/' },
-        { id: 4, name: 'Our Covering', path: '/' }
+        { id: 1, name: 'About Us', path: '/about' },
+        { id: 2, name: 'Leadership', path: '/leadership' },
+        { id: 3, name: 'History', path: '/history' },
+        { id: 4, name: 'Our Covering', path: '/our-covering' }
     ];
 
     const ministries = [
-        { id: 1, name: 'Inner Healing', path: '/' },
-        { id: 2, name: 'Intercessory Prayer', path: '/' },
-        { id: 3, name: 'Worship', path: '/' }
+        { id: 1, name: 'Inner Healing', path: '/inner-healing' },
+        { id: 2, name: 'Intercessory Prayer', path: '/intercessory-prayer' },
+        { id: 3, name: 'Worship', path: '/worship' }
     ];
 
     const planAVisit = [
-        { id: 1, name: 'Contact Us', path: '/' },
+        { id: 1, name: 'Contact Us', path: '/contact' },
         { id: 2, name: 'Events', path: '/eventpage' }
     ];
 
@@ -36,7 +36,7 @@ export default function Header() {
                     </div>
                 
                     <div>
-                        <Link className={styles['menu-title']} href="/">About</Link>
+                        <Link className={styles['menu-title']} href="about">About</Link>
                         <ul>
                             {about.map((item) => (
                                 <li key={item.id} className={styles['dropdown']}>
@@ -47,7 +47,7 @@ export default function Header() {
                     </div>
                 
                     <div>
-                        <Link className={styles['menu-title']} href="/">Ministries</Link>
+                        <Link className={styles['menu-title']} href="/inner-healing">Ministries</Link>
                         <ul>
                             {ministries.map((item) => (
                                 <li key={item.id} className={styles['dropdown']}>
@@ -58,7 +58,7 @@ export default function Header() {
                     </div>
                     
                     <div>
-                        <Link className={styles['menu-title']} href="/">Plan a Visit</Link>
+                        <Link className={styles['menu-title']} href="/contact">Plan a Visit</Link>
                         <ul>
                             {planAVisit.map((item) => (
                                 <li key={item.id} className={styles['dropdown']}>
@@ -69,7 +69,7 @@ export default function Header() {
                     </div>
                 
                     <div>
-                        <Link className={styles['menu-title']} href="/">Give</Link>
+                        <Link className={styles['menu-title']} href="/give">Give</Link>
                     </div>
                     <div>
                     <DropDown />
