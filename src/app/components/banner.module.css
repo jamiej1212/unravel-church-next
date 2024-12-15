@@ -22,7 +22,7 @@
     bottom: 5%;
     left: 5%;
     color: white;
-    z-index: 100;
+    z-index: 10;
 }
 
 /* Mobile Phones - flex-direction: column-reverse */

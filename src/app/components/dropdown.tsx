@@ -41,17 +41,28 @@ const DropDown: React.FC = () => {
             />
             {showComponent && (
                 <ul className={styles['list-container']}>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Home</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/about">About Us</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-team">Our Team</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/history">History</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-covering">Our Covering</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/inner-healing">Inner Healing</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/intercessory-prayer">Intercessory Prayer</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/worship">Worship</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/contact">Contact Us</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/eventpage">Events</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/give">Give</Link></li>
+                    <div>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Home</Link></li>
+                    </div>
+                    
+                    <div>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/about">About Us</Link></li>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-team">Our Team</Link></li>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/history">History</Link></li>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-covering">Our Covering</Link></li>
+                    </div>
+                    
+                    <div>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/inner-healing">Inner Healing</Link></li>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/intercessory-prayer">Intercessory Prayer</Link></li>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/worship">Worship</Link></li>
+                    </div>
+                    
+                    <div>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/contact">Contact Us</Link></li>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/eventpage">Events</Link></li>
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/give">Give</Link></li>
+                    </div>
                 </ul>
             )}
         </div>
