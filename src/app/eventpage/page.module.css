@@ -1,13 +1,16 @@
-.event-page-title{
-    margin-top: 7rem;
-    margin-bottom: 3rem;
+.event-page{
+    margin-top: 10%;
     margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+.event-page-title{
+    margin-top: 20%;
 }
 
 .event-container{
     width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-bottom: 1rem;
     display: grid;
 }
@@ -23,7 +26,7 @@
 }
 
 .event-pic{
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 

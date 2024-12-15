@@ -6,7 +6,7 @@ import { EVENT_ITEM } from './events-item';
 
 export default function EventPage(){
     return(
-        <>
+        <div className={styles['event-page']}>
             <h3 className={styles['event-page-title']}>UPCOMING EVENTS</h3>
             <div className={styles['event-container']}>
                 {EVENT_ITEM.map(eventItem => (<div className={styles['event-items']} key={eventItem.id}>
@@ -19,6 +19,6 @@ export default function EventPage(){
                 </div>))}
                 
             </div>
-        </>
+        </div>
     );
 }
