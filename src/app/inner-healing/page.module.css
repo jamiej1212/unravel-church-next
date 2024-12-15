@@ -1,0 +1,34 @@
+.inner-healing-container{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: var(--font);
+}
+
+.inner-healing{
+    margin-bottom: 20%;
+}
+
+.inner-healing-two{
+    margin-bottom: 10%;
+}
+
+.inner-healing > h2{
+    margin-bottom: 2rem;
+}
+
+.inner-healing-btn{
+    display: block;
+    width: fit-content;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: white;
+    background-color: var(--darker-foreground);
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+
+.inner-healing-btn:hover{
+    background-color: var(--foreground);
+    color: var(--font);
+}
