@@ -74,13 +74,3 @@
         margin-top: 1.5rem;
     }
   }
-  
-  /* Laptops / Small Desktops */
-  @media (min-width: 1280px) {
-   
-  }
-  
-  /* Large Desktops */
-  @media (min-width: 1440px) {
-    
-  }

@@ -43,7 +43,7 @@ const DropDown: React.FC = () => {
                 <ul className={styles['list-container']}>
                     <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/">Home</Link></li>
                     <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/about">About Us</Link></li>
-                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/leadership">Leadership</Link></li>
+                    <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-team">Our Team</Link></li>
                     <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/history">History</Link></li>
                     <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-covering">Our Covering</Link></li>
                     <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/inner-healing">Inner Healing</Link></li>

@@ -10,7 +10,7 @@ import DropDown from './dropdown';
 export default function Header() {
     const about = [
         { id: 1, name: 'About Us', path: '/about' },
-        { id: 2, name: 'Leadership', path: '/leadership' },
+        { id: 2, name: 'Our Team', path: '/our-team' },
         { id: 3, name: 'History', path: '/history' },
         { id: 4, name: 'Our Covering', path: '/our-covering' }
     ];

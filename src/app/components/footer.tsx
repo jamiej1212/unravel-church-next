@@ -27,7 +27,7 @@ export default function Footer(){
                 <div className={styles['inner-container']}>
                     <br/>
                     <p><Link className={styles['sub-link']} href="/about">About Us</Link></p>
-                    <p><Link className={styles['sub-link']} href="/leadership">Leadership</Link></p>
+                    <p><Link className={styles['sub-link']} href="/our-team">Our Team</Link></p>
                     <p><Link className={styles['sub-link']} href="/history">History</Link></p>
                     <p><Link className={styles['sub-link']} href="/our-covering">Our Covering</Link></p>
                 </div>
