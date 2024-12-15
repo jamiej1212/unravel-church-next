@@ -32,9 +32,11 @@
 }
 
 .nav-link{
+    display: block;
     text-decoration: none;
     color: var(--font);
     text-wrap: nowrap;
+    width: 100%;
 }
 
 
