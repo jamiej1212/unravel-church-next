@@ -5,15 +5,12 @@ import bannerImg from '../assets/banner.jpg';
 import pastor from '../assets/pastors.jpg';
 import reverend from '../assets/reverends.jpg';
 import minister from '../assets/ministers.jpg';
+import Banner from '../components/banner';
 
 export default function OurTeam(){
     return(
         <>
-            <section className={styles['banner-container']}>
-                <Image className={styles['banner-img']} src={bannerImg} alt="Banner Image" />
-                <div></div>
-                <h1>ABOUT US</h1>
-            </section>
+            <Banner prop="Our Team" />
 
             <section className={styles['team-container']}>
                 <h1>Meet Our Team</h1>
