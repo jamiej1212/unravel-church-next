@@ -1,0 +1,86 @@
+.banner-container{
+    position: relative;
+    width: 100%;
+}
+
+.banner-img{
+    width: 100%;
+    height: 100%;
+}
+
+.banner-container > div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(168, 184, 158, 0.35);
+    position: absolute;
+    bottom: 0;
+}
+
+.banner-container > h1{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    z-index: 100;
+}
+
+.about-container{
+    margin: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img{
+    width: 100%;
+    height: 30vh;
+}
+
+.about-desc{
+    color: var(--font);
+}
+
+/* Mobile Phones - flex-direction: column-reverse */
+@media (min-width: 320px) {
+    .banner-container{
+        height: 20vh;
+    }
+  }
+  
+  /* Larger Mobile Phones - flex-direction: column-reverse */
+  @media (min-width: 480px) {
+    .banner-container{
+        height: 50vh;
+    }
+
+    .about-img{
+        height: 60vh;
+    }
+  }
+  
+  /* Tablets Landscape / Small Laptops */
+  @media (min-width: 1024px) {
+    .banner-container{
+        height: 30vh;
+    }
+
+    .about-container{
+        flex-direction: row;
+    }
+
+    .about-img{
+        width: 30%;
+        margin-right: 3rem;
+        margin-top: 1.5rem;
+    }
+  }
+  
+  /* Laptops / Small Desktops */
+  @media (min-width: 1280px) {
+   
+  }
+  
+  /* Large Desktops */
+  @media (min-width: 1440px) {
+    
+  }
