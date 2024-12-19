@@ -59,7 +59,7 @@ export default function Header() {
                     </div>
                     
                     <div>
-                        <Link className={styles['menu-title']} href="/contact">Plan a Visit</Link>
+                        <Link className={styles['menu-title']} href="/plan-a-visit">Plan a Visit</Link>
                         <ul>
                             {planAVisit.map((item) => (
                                 <li key={item.id} className={styles['dropdown']}>
