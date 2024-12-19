@@ -1,5 +1,5 @@
 .about-container{
-    margin: 10%;
+    margin: 5% 10%;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@
 
 .about-desc{
     color: var(--font);
+    font-size: 1.2rem;
 }
 
 /* Mobile Phones - flex-direction: column-reverse */
@@ -44,7 +45,13 @@
 
     .about-img{
         width: 30%;
+        height: 50vh;
         margin-right: 3rem;
         margin-top: 1.5rem;
+    }
+
+    .about-desc{
+        margin-top: auto;
+        margin-bottom: auto;
     }
   }
