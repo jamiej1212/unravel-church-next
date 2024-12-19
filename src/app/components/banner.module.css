@@ -19,6 +19,7 @@
 
 .banner-container > h1{
     position: absolute;
+    font-size: 4rem;
     bottom: 5%;
     left: 5%;
     color: white;
@@ -43,6 +44,6 @@
   /* Tablets Landscape / Small Laptops */
   @media (min-width: 1024px) {
     .banner-container{
-        height: 30vh;
+        height: 50vh;
     }
   }
