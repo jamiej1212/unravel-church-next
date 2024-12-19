@@ -6,10 +6,17 @@ import Header from './components/header';
 import Footer from "./components/footer";
 import FontAwesomeConfig from "./components/fontawesome";
 
+import localFont from 'next/font/local';
+
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
   weight: ["400", "900"],
+});
+
+const Pretendard = localFont({
+    src: '../../public/fonts/PretendardVariable.ttf',
+    variable: "--font-pretendard"
 });
 
 export const metadata: Metadata = {
