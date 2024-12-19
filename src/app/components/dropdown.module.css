@@ -81,12 +81,21 @@
     .list-container{
         flex-direction: row;
         width: 100vw;
-        
         justify-content: space-around;
     }
 
     .nav-list{
         padding: .3rem .3rem;
+    }
+
+    .list-container{
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-x: auto;
+    }
+
+    .list-container > div > hr{
+        display: none;
     }
   }
   

@@ -46,21 +46,35 @@ const DropDown: React.FC = () => {
                     </div>
                     
                     <div>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/about">About Us</Link></li>
+                        <hr />                        
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-team">Our Team</Link></li>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/history">History</Link></li>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/our-covering">Our Covering</Link></li>
                     </div>
                     
                     <div>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/inner-healing">Inner Healing</Link></li>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/intercessory-prayer">Intercessory Prayer</Link></li>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/worship">Worship</Link></li>
                     </div>
                     
                     <div>
+                        <hr />
+                        <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/plan-a-visit">Plan a Visit</Link></li>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/contact">Contact Us</Link></li>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/eventpage">Events</Link></li>
+                    </div>
+                    <div>
+                        <hr />
                         <li className={styles['nav-list']}><Link className={styles['nav-link']} href="/give">Give</Link></li>
                     </div>
                 </ul>

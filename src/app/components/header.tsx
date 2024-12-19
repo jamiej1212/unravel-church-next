@@ -22,8 +22,9 @@ export default function Header() {
     ];
 
     const planAVisit = [
-        { id: 1, name: 'Contact Us', path: '/contact' },
-        { id: 2, name: 'Events', path: '/eventpage' }
+        { id: 1, name: 'Plan a Visit', path: '/plan-a-visit'},
+        { id: 2, name: 'Contact Us', path: '/contact' },
+        { id: 3, name: 'Events', path: '/eventpage' }
     ];
 
     return (
