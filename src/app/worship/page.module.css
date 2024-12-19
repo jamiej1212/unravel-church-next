@@ -1,0 +1,92 @@
+.container{
+    margin: 5% 5%;
+    width: 90%;
+}
+
+.container > p{
+    font-size: 1.2rem;
+}
+
+.container > h1{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+}
+
+.worship-img{
+    width: 100%;
+    height: auto;
+    margin: 5% 0;
+}
+
+.worship-content {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.inner-container{
+    display: flex;
+}
+
+.inner-container > b{
+    font-size: 1.5rem;
+}
+
+.worship-content > p{
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    margin-left: 3rem;
+    line-height: calc(1ex / 0.32);
+}
+
+.icon{
+    color: #a8b89e;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+/* -------------------------------[ media queries ]------------------------------------ */
+
+/* Mobile Phones - flex-direction: column-reverse */
+@media (min-width: 320px) {
+
+}
+
+/* Larger Mobile Phones - flex-direction: column-reverse */
+@media (min-width: 480px) {
+}
+
+/* Tablets Portrait - flex-direction: row */
+@media (min-width: 768px) {
+}
+
+/* Tablets Landscape / Small Laptops */
+@media (min-width: 1024px) {
+    .container{
+        margin: 5% 15%;
+        width: 70%;
+    }
+
+    .container > h1{
+        font-size: 2.6rem;
+    }
+
+    .inner-container > b{
+        font-size: 2rem;
+    }
+}
+
+/* Laptops / Small Desktops */
+@media (min-width: 1280px) {
+    .container > h1{
+        font-size: 3rem;
+    }
+}
+
+/* Large Desktops */
+@media (min-width: 1440px) {
+    .container > h1{
+        font-size: 3.2rem;
+    }
+  
+}
