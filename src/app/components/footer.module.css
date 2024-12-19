@@ -1,6 +1,6 @@
 .outer-container{
     color: var(--font);
-    font-size: .7rem;
+    font-size: 1rem;
     text-wrap: nowrap;
     padding: 1rem;
     background-color: var(--background);
