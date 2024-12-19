@@ -17,10 +17,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// import FontAwesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
 export default function Home() {
   const images = [
     {id: 1, src: mainOne, alt: 'Image'},
