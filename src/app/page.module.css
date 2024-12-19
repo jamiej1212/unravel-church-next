@@ -12,7 +12,7 @@
 .welcome-message{
     text-align: center;
     color: var(--font);
-    height: 10rem;
+    height: 20rem;
 }
 
 .welcome-message-container{
@@ -27,15 +27,21 @@
     margin: .3rem;
 }
 
+.welcome-message-container > h1{
+    font-size: 3rem;
+}
+
+.welcome-message-container > p{
+    font-size: 1.2rem;
+}
+
 .quick-info{
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
-    margin-left: 10%;
 }
 
 .quick-info-title{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
     color: var(--font);
@@ -48,8 +54,9 @@
     display: flex;
     flex-direction: row;
     background-color: var(--foreground);
-    padding: 1rem;
+    padding: 3rem;
     margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .info-bar{
@@ -62,9 +69,8 @@
 .quick-info-contents > div{
     background-color: white;
     box-shadow: 3px 3px 3px var(--darker-foreground);
-    margin-left: .5rem;
-    margin-right: .5rem;
     padding: 0 1rem;
+    padding-bottom: 1rem;
     color: var(--font);
     flex: 1;
     border-radius: 5px;
@@ -72,6 +78,10 @@
 
 .quick-info-contents > div > h2{
     margin-top: .5rem;
+}
+
+.quick-info-contents > div > p{
+    font-size: 1.2rem;
 }
 
 .pastor-btn{
@@ -86,6 +96,7 @@
     text-decoration: none;
     cursor: pointer;
     margin-bottom: .5rem;
+    margin-top: 2rem;
 }
 
 .pastor-btn:hover{
@@ -149,12 +160,15 @@
 
 /* Tablets Landscape / Small Laptops */
 @media (min-width: 1024px) {
+    
   
 }
 
 /* Laptops / Small Desktops */
 @media (min-width: 1280px) {
-  
+    .quick-info-contents{
+        padding: 3rem 20%;
+    }
 }
 
 /* Large Desktops */
