@@ -1,12 +1,12 @@
 .inner-healing-container{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
     color: var(--font);
 }
 
 .inner-healing{
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .inner-healing-two{
@@ -15,6 +15,10 @@
 
 .inner-healing > h2{
     margin-bottom: 2rem;
+}
+
+.inner-healing > p, .inner-healing-two > p{
+    font-size: 1.2rem;
 }
 
 .inner-healing-btn{
