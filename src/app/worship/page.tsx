@@ -2,11 +2,10 @@ import Banner from '../components/banner';
 import Image from 'next/image';
 
 import styles from './page.module.css'
-import worship from '../assets/worship.jpg';
+import worship from '../assets/worship.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 export default function OurCovering(){
 
