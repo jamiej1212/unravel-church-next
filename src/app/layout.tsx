@@ -1,26 +1,19 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import "./globals.css";
 
 import Header from './components/header';
 import Footer from "./components/footer";
 import FontAwesomeConfig from "./components/fontawesome";
 
-import localFont from 'next/font/local';
-
-const roboto = Roboto({
-  variable: "--font-roboto",
-  subsets: ["latin"],
-  weight: ["400", "900"],
-});
+import localFont from "next/font/local";
 
 const Pretendard = localFont({
-    src: '../../public/fonts/PretendardVariable.ttf',
-    variable: "--font-pretendard"
+  src: [{ path: '../../public/fonts/PretendardVariable.ttf'}],
+  variable: "--font-pretendard"
 });
 
 export const metadata: Metadata = {
-  title: "Unravel Church",
+  title: "Unravel Church"
 };
 
 export default function RootLayout({
@@ -33,7 +26,7 @@ export default function RootLayout({
       <head>
         <FontAwesomeConfig />
       </head>
-      <body>
+      <body className={Pretendard.variable}>
       <div className="container">
           <Header />
           {children}
