@@ -1,57 +1,141 @@
 .about-container{
-    margin: 5% 10%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-.about-img{
     width: 100%;
-    height: 30vh;
-}
-
-.about-desc{
-    color: var(--font);
+    background-image: url('../assets/about_vision.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     font-size: 1.2rem;
 }
 
-/* Mobile Phones - flex-direction: column-reverse */
-@media (min-width: 320px) {
-    .banner-container{
-        height: 20vh;
+.about-container hr{
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.about-container h1{
+    margin-bottom: 1rem;
+}
+
+.about-container > section{
+    padding: 2% 5%;
+}
+/* -----------------------[about church] -----------------------*/
+.about-church{
+    color: var(--font);
+    background-color: white;
+}
+
+.about-church hr{
+    border: 1px solid var(--font);
+}
+
+.about-church h1{
+    padding-top: 5%;
+    margin-top: 0;
+}
+
+.about-church ul{
+    list-style: none;
+    padding-bottom: 2%;
+}
+
+.about-church ul li::before{
+    content: '\2671';
+    margin-right: 8px;
+}
+
+/* -----------------------[about vision] -----------------------*/
+.about-vision{
+    color: white;
+}
+
+.about-vision hr{
+    border: 1px solid white;
+}
+
+.about-vision > p:first-of-type{
+    font-size: 1.3rem;
+}
+
+.about-vision > p > b:first-of-type{
+    font-size: 1.4rem;
+}
+
+.about-vision > b{
+    display: block;
+    margin-top: 3rem;
+    font-size: 1.4rem;
+}
+
+/* -----------------------[about mission] -----------------------*/
+.about-mission{
+    background-color: rgba(184, 194, 178, 0.5);
+    color: rgb(49, 49, 49);
+}
+
+.about-mission hr{
+    border: 1px solid rgb(49, 49, 49);
+}
+
+.about-mission  b{
+    font-size: 1.3rem;
+}
+
+.about-mission ul{
+    margin-top: 3rem;
+}
+
+.about-mission ul li{
+    margin-bottom: 1rem;
+}
+
+/* -----------------------[core doctrine] -----------------------*/
+.core-doctrine{
+    color: white;
+    background-color: rgba(74, 73, 64, 0.2);
+}
+
+.core-doctrine hr{
+    border: 1px solid white;
+}
+
+.core-doctrine h3{
+    margin-top: 3rem;
+}
+
+.core-doctrine p:last-of-type{
+    margin-bottom: 5%;
+}
+
+/* -----------------------[media queries] -----------------------*/
+
+/* Tablets Portrait - flex-direction: row */
+@media (min-width: 768px) {
+    .about-container > section{
+        padding: 2% 10%;
     }
-  }
+}
+
+/* Tablets Landscape / Small Laptops */
+@media (min-width: 1024px) {
+    .about-container > section{
+        padding: 2% 15%;
+    }
   
-  /* Larger Mobile Phones - flex-direction: column-reverse */
-  @media (min-width: 480px) {
-    .banner-container{
-        height: 50vh;
-    }
+}
 
-    .about-img{
-        height: 60vh;
+/* Laptops / Small Desktops */
+@media (min-width: 1280px) {
+    .about-container > section{
+        padding: 2% 20%;
     }
-  }
+}
+
+/* Large Desktops */
+@media (min-width: 1440px) {
+    .about-container > section{
+        padding: 2% 25%;
+    }
   
-  /* Tablets Landscape / Small Laptops */
-  @media (min-width: 1024px) {
-    .banner-container{
-        height: 30vh;
-    }
-
-    .about-container{
-        flex-direction: row;
-    }
-
-    .about-img{
-        width: 30%;
-        height: 50vh;
-        margin-right: 3rem;
-        margin-top: 1.5rem;
-    }
-
-    .about-desc{
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-  }
+}
