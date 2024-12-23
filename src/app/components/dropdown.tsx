@@ -18,23 +18,28 @@ const DropDown = () => {
   useEffect(() => {
     if (typeof window === 'undefined') return; // Ensure this only runs on the client side
 
+    setIsChecked(false);
+
     // Function to close the dropdown if a click occurs outside of the 'nav-container' element
     const handleClickOutside = (event: MouseEvent) => {
       // Check if the event target is outside the nav-container
+      
       if (!(event.target instanceof HTMLElement) || !event.target.closest(`.${styles['nav-container']}`)) {
         setShowComponent(false);
-  
+        // Revert the checkbox to its initial state after routing to a new page
+        setIsChecked(false);
       }
     };
 
+    // Listening for clicks outside the dropdown to close it
     document.addEventListener('click', handleClickOutside);
 
+    // Cleanup function to remove event listeners when the component unmounts
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
   }, []);
 
-  // Close the dropdown when the pathname changes
   useEffect(() => {
     setShowComponent(false);
     setIsChecked(false);
