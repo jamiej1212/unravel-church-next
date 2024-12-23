@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import styles from './header.module.css';
-import Logo from '../logo.ico';
+import Logo from '../assets/logo.png';
 import DropDown from './dropdown';
 
 
@@ -28,7 +28,7 @@ export default function Header() {
     ];
 
     return (
-        <>
+        <div className={styles['hd-container']}>
             <div className={styles['header-container']}>
                 <Image className={styles['header-logo']} src={Logo} alt="Unravel Church Logo" priority />
                 <div className={styles['menu-container']}>
@@ -79,7 +79,7 @@ export default function Header() {
                 </div>
             </div>
             
-        </>
+        </div>
         
         
     );

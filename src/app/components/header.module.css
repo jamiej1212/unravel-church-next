@@ -1,48 +1,46 @@
 /* -------------------------------[ header.tsx ]------------------------------------ */
-.header-container{
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    height: 5rem;
+.hd-container{
     position: fixed;
     width: 100%;
-    z-index: 100;
+    margin: 0;
     top: 0;
+    z-index: 100;
+}
+
+.header-container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .header-logo{
-    display: block;
-    width: 70px;
-    height: 70px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 1rem;
+    width: 100px;
+    height: auto;
+    margin: 15px;
 }
 
 .menu-container{
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
-    width: 100%;
+    flex: 1;
 }
 
-.menu-container > div{
-    position: relative;
-}
 
 .menu-container > div > ul{
     padding: 0;
     margin: 0;
-    top: 100%;
     display: none;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.5);
     width: auto;
     white-space: nowrap;
     z-index: 100;
+    font-size: 1.5rem;
+    top: 100%;
 }
 
 .menu-container > div:hover > ul, .menu-container > div > ul:hover{
@@ -50,11 +48,11 @@
 }
 
 .menu-title{
+    display: none;
     text-decoration: none;
     color: var(--font);
-    text-wrap: nowrap;
-    display: none;
-    height: 5rem;
+    font-size: 1.5rem;
+    height: 80px;
 }
 
 .menu-title:hover{
@@ -67,7 +65,7 @@
 
 .dropdown-item{
     text-decoration: none;
-    color: var(--font);
+    color: black;
     text-wrap: nowrap;
     display: block;
     padding: 0.1rem .5rem;
@@ -78,6 +76,99 @@
     color: white;
 }
 
+/* -------------------------------[ dropdown.tsx ]------------------------------------ */
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+    margin-right: 15px;
+}
+
+.hamburger-container input[type="checkbox"]{
+    display: none;
+}
+
+.hamburger-container label{
+    width: 40px;
+    height: 30px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger-container label span{
+    position: absolute;
+    height: 4px;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    transition: .3s;
+}
+
+.hamburger-container label span:nth-child(1){
+    top: 0;
+}
+
+.hamburger-container label span:nth-child(2){
+    top: calc(50% - 2px);
+}
+
+.hamburger-container label span:nth-child(3){
+    top: calc(100% - 4px);
+}
+
+.hamburger-container input[type="checkbox"]:checked + label span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.hamburger-container input[type="checkbox"]:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+
+.hamburger-container input[type="checkbox"]:checked + label span:nth-child(3){
+top: 50%;
+transform: rotate(-45deg);
+}
+
+/* ul */
+.list-container{
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    border-top: none;
+    right: 0;
+    background-color: white;
+    padding: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-container  hr{
+    margin: 0;
+}
+
+/* li */
+.nav-list{
+    list-style: none;
+    text-align: center;
+    padding: .5rem 1.5rem;
+    color: var(--font);
+}
+
+.nav-list:hover{
+    background-color: var(--foreground);
+}
+
+/* link */
+.nav-link{
+    text-decoration: none;
+    color: var(--darker-gray);
+    font-size: 1.2rem;
+}
 
 /* -------------------------------[ media queries ]------------------------------------ */
 
@@ -106,7 +197,18 @@
   
   /* Tablets Landscape / Small Laptops */
   @media (min-width: 1024px) {
-    
+    .nav-container{
+        display: none;
+    }
+
+    .menu-title{
+        display: block;
+        text-decoration: none;
+        color: var(--font);
+        font-size: 1.5rem;
+        height: 80px;
+    }
+
   }
   
   /* Laptops / Small Desktops */
@@ -118,4 +220,25 @@
   @media (min-width: 1440px) {
     
   }
+
+  @media (max-height: 600px)
+  {
+    .list-container{
+        flex-direction: row;
+        width: 100vw;
+        justify-content: space-around;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-x: auto;
+    }
+
+    .nav-list{
+        padding: .3rem .3rem;
+    }
+
+    .list-container div hr{
+        display: none;
+    }
+  }
+  
   
