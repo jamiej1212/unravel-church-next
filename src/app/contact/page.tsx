@@ -9,8 +9,14 @@ export default function ContactUs(){
     return(
         <>
             <Banner prop="CONTACT US" />
+            <div className={styles.title}>
+                <h1>Any Questions? Send Us a Message. </h1>
+                <h2>Fill out the form below and we will be in touch soon </h2>
+            </div>
+            
             <div className={styles['contact-container']}>
                 <Image className={styles['contact-img']} src={contactImg} alt="Scenery image"/>
+                
                 <form className={styles['contact-form']}>
                     <h2>Contact Us</h2>
                     <label htmlFor="full-name">Full Name *</label>
