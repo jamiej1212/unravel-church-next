@@ -9,6 +9,7 @@ import mainOne from './assets/main-1.jpg';
 import mainTwo from './assets/main-2.jpg';
 import mainThree from './assets/main-3.jpg';
 import mainFour from './assets/main-4.jpg';
+import service from './assets/sunday_service.png';
 
 // Swiper import
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -27,32 +28,46 @@ export default function Home() {
 
   return(
     <div>
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        loop={true}
-        pagination={{clickable: true}}
-        navigation={false}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false
-        }}
-        className={styles['swiper-slider']}
-      >
-        {images.map((image) => (
-          <SwiperSlide key={image.id}>
-            <Image
-              src={image.src}
-              alt={image.alt}
-              className={styles['swiper-image']}
-            ></Image>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className={styles['swiper-container']}>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          loop={true}
+          pagination={{clickable: true}}
+          navigation={false}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false
+          }}
+          className={styles['swiper-slider']}
+        >
+          {images.map((image) => (
+            <SwiperSlide key={image.id}>
+              <Image
+                src={image.src}
+                alt={image.alt}
+                className={styles['swiper-image']}
+              >
+              </Image>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className={styles['swiper-text']}>
+            <h1>FOLLOWING <span>JESUS</span></h1>
+            <h1>WHEREVER WE ARE</h1>
+            <p>Building Faith, Sharing Love, Transforming Lives</p>
+        </div>
+      </div>
 
       <section className={styles['welcome-message']}>
-        <div className={styles['welcome-message-container']}>
-          <h1>Welcome to Unravel Church</h1>
-          <p>San Jose, CA</p>
+            <div className={styles['welcome-message-container']}>
+                <h1>Welcome to Unravel Church</h1>
+                <p>San Jose, CA</p>
+            </div>
+      </section>
+
+      <section className={styles['sunday-service']}>
+        <div>
+          <Image src={service} alt="Sunday service flyer image" />
         </div>
       </section>
     
@@ -61,13 +76,6 @@ export default function Home() {
           New Here?
         </div>
         <div className={styles['quick-info-contents']}>
-          <div>
-            <div className={styles['info-bar']}></div>
-            <h2>SUNDAY SERVICE</h2>
-            <p>Every Sunday at 1:30PM</p>
-            <p>Rear Entrance of Gateway City Church</p>
-            <p>5883 Eden Park Pl, San Jose, CA 95138</p>
-          </div>
           <div>
             <div className={styles['info-bar']}></div>
             <h2>EXPERIENCES</h2>

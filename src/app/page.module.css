@@ -1,12 +1,45 @@
+.swiper-container{
+    position: relative;
+}
+
 .swiper-slider{
     width: 100%;
-    height: 30vh;
+    height: auto;
+    margin-top: 60px;
+    max-height: 500px;
 }
 
 .swiper-image{
     width: 100%;
     height: 100%;
     object-fit: fill;
+}
+
+.swiper-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+    text-align: center;
+}
+
+.swiper-text > h1{
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
+
+.swiper-text > h1 > span{
+    color: rgb(252, 217, 1);
+}
+
+.swiper-text > h1:first-child{
+    margin-bottom: 0;
+}
+
+.swiper-text > h1:nth-child(2){
+    margin-top: 0;
 }
 
 .welcome-message{
@@ -35,6 +68,46 @@
     font-size: 1.2rem;
 }
 
+/* Sunday Service */
+.sunday-service{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sunday-service > div{
+    background-image: url('./assets/sunday_service_bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.sunday-service > div:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 36, 36, 0.7);
+    content: "";
+}
+
+.sunday-service > div > img{
+    width: 50%;
+    height: auto;
+    z-index: 10;
+}
+
+
 .quick-info{
     display: flex;
     flex-direction: column;
@@ -43,17 +116,15 @@
 .quick-info-title{
     font-size: 3rem;
     font-weight: bold;
-    text-align: center;
     color: var(--font);
-    background-color: var(--foreground);
     padding-top: 3rem;
     padding-bottom: 2rem;
+    margin-left: 5%;
 }
 
 .quick-info-contents{
     display: flex;
-    flex-direction: row;
-    background-color: var(--foreground);
+    flex-direction: column;
     padding: 3rem;
     margin-bottom: 1rem;
     gap: 1rem;
@@ -74,6 +145,7 @@
     color: var(--font);
     flex: 1;
     border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 .quick-info-contents > div > h2{
@@ -131,18 +203,6 @@
 }
 /* -------------------------------[ media queries ]------------------------------------ */
 
-/* Mobile Phones - flex-direction: column-reverse */
-@media (min-width: 320px) {
-    .quick-info-contents{
-        flex-direction: column;
-    }
-
-    .quick-info-contents > div{
-        margin-bottom: 1rem;
-    }
-
-}
-
 /* Larger Mobile Phones - flex-direction: column-reverse */
 @media (min-width: 480px) {
     .swiper-slider{
@@ -156,12 +216,10 @@
     .quick-info-contents{
         flex-direction: row;
     }
-}
 
-/* Tablets Landscape / Small Laptops */
-@media (min-width: 1024px) {
-    
-  
+    .swiper-slider{
+        height: 50%;
+    }
 }
 
 /* Laptops / Small Desktops */
@@ -171,7 +229,3 @@
     }
 }
 
-/* Large Desktops */
-@media (min-width: 1440px) {
-  
-}
