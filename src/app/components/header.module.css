@@ -61,6 +61,11 @@
 
 .dropdown{
     list-style: none;
+    padding-top: .5rem;
+}
+
+.dropdown:first-child{
+    padding: 0;
 }
 
 .dropdown-item{
