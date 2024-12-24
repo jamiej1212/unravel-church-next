@@ -10,6 +10,8 @@ import mainTwo from './assets/main-2.jpg';
 import mainThree from './assets/main-3.jpg';
 import mainFour from './assets/main-4.jpg';
 import service from './assets/sunday_service.png';
+import experiences from './assets/experiences.jpg';
+import pastors from './assets/pastors.jpg';
 
 // Swiper import
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -17,6 +19,10 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
+// Font Awesome import
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   const images = [
@@ -72,30 +78,31 @@ export default function Home() {
       </section>
     
       <section className={styles['quick-info']}>
-        <div className={styles['quick-info-title']}>
-          New Here?
-        </div>
         <div className={styles['quick-info-contents']}>
-          <div>
-            <div className={styles['info-bar']}></div>
-            <h2>EXPERIENCES</h2>
-            <p>
-              Our church is a community of faith and love. Through worship,
-              prayer, and fellowship, you&#39;ll grow closer to God and strengthen your spirit.
-              Join us for weekly services and programs that help you deepen your faith and
-              support one another. We warmly invite you to be part of our family
-            </p>
-          </div>
-          <div>
-            <div className={styles['info-bar']}></div>
-            <h2>PASTORS</h2>
-            <p>
-            Our pastors are dedicated leaders, offering inspiring sermons and personal
-            support to help you grow in faith. With compassion and care, they guide our
-            church community with a welcoming and uplifting presence.
-            </p>
-            <Link className={styles['pastor-btn']} href="/">Our Pastors</Link>
-          </div>
+            <div>
+                <Image src={experiences} alt="An image of people having fun" />
+                <h2>EXPERIENCES</h2>
+                <p>
+                    Our church is a community of faith and love.
+                    Join us for worship, prayer, and fellowship to grow in faith and
+                    support one another. We invite you to be part of our family.
+                </p>
+                <Link className={styles['experience-btn']} href="/">Worship &nbsp;
+                    <FontAwesomeIcon icon={faArrowRight} />
+                </Link>
+            </div>
+            <div>
+                <Image src={pastors} alt="An image of the Bible" />
+                <h2>PASTORS</h2>
+                <p>
+                    Our pastors are dedicated leaders, offering inspiring sermons and 
+                    personal support to help you grow in faith. With compassion, 
+                    they guide our church with a welcoming presence.
+                </p>
+                <Link className={styles['pastor-btn']} href="/">Our Pastors &nbsp;
+                    <FontAwesomeIcon icon={faArrowRight} />
+                </Link>
+            </div>
         </div>
       </section>
       <EventPage />
