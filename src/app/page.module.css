@@ -79,16 +79,9 @@
 }
 
 .sunday-service > div{
-    background-image: url('./assets/sunday_service_bg.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-items: center;
     position: relative;
     display: flex;
     justify-content: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
 }
 
 .sunday-service > div:before{
@@ -97,12 +90,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(36, 36, 36, 0.7);
     content: "";
 }
 
 .sunday-service > div > img{
-    width: 50%;
+    width: 70%;
     height: auto;
     z-index: 10;
 }
@@ -208,9 +200,6 @@
 
 /* Larger Mobile Phones - flex-direction: column-reverse */
 @media (min-width: 480px) {
-    .swiper-slider{
-        height: 70vh;
-    }
 
 }
 
@@ -222,6 +211,28 @@
 
     .swiper-slider{
         height: 50%;
+    }
+
+    .sunday-service > div{
+        background-image: url('./assets/sunday_service_bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-items: center;
+    }
+
+    .sunday-service > div{
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+    .sunday-service > div:before{
+        background-color: rgba(36, 36, 36, 0.7);
+        content: "";
+    }
+
+    .sunday-service > div > img{
+        width: 50%;
     }
 }
 
