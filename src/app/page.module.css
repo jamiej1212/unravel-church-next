@@ -94,7 +94,7 @@
 }
 
 .sunday-service > div > img{
-    width: 70%;
+    width: 100%;
     height: auto;
     z-index: 10;
 }
@@ -230,7 +230,7 @@
         background-color: rgba(36, 36, 36, 0.7);
         content: "";
     }
-
+    
     .sunday-service > div > img{
         width: 50%;
     }
