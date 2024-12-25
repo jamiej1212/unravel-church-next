@@ -3,66 +3,21 @@ import Link from "next/link";
 import EventPage from './eventpage/page';
 
 import styles from "./page.module.css";
-import mainOne from './assets/main/main-1.jpg';
-import mainTwo from './assets/main/main-2.jpg';
-import mainThree from './assets/main/main-3.jpg';
-import mainFour from './assets/main/main-4.jpg';
 import service from './assets/main/sunday_service.png';
 import experiences from './assets/main/experiences.jpg';
 import pastors from './assets/main/pastors.jpg';
 
-// Swiper import
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 // Font Awesome import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import SwiperComp from "./components/swipercomp";
 
 export default function Home() {
-  const images = [
-    {id: 1, src: mainOne, alt: 'Image'},
-    {id: 2, src: mainTwo, alt: 'Image'},
-    {id: 3, src: mainThree, alt: 'Image'},
-    {id: 4, src: mainFour, alt: 'Image'}
-  ];
+
 
   return(
     <div>
-      <div className={styles['swiper-container']}>
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          loop={true}
-          pagination={{clickable: true}}
-          navigation={false}
-          autoplay={{
-            delay: 4000,
-            disableOnInteraction: false
-          }}
-          className={styles['swiper-slider']}
-        >
-          {images.map((image) => (
-            <SwiperSlide key={image.id}>
-              <Image
-                src={image.src}
-                alt={image.alt}
-                className={styles['swiper-image']}
-                priority
-              >
-              </Image>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <div className={styles['swiper-text']}>
-            <h1>FOLLOWING <span>JESUS</span></h1>
-            <h1>WHEREVER WE ARE</h1>
-            <p>Building Faith, Sharing Love, Transforming Lives</p>
-        </div>
-      </div>
-
+       <SwiperComp />
       <section className={styles['welcome-message']}>
             <div className={styles['welcome-message-container']}>
                 <h1>Welcome to Unravel Church</h1>
