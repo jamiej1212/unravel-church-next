@@ -1,6 +1,8 @@
 import styles from './page.module.css';
 
 import Banner from '../components/banner';
+import Image from 'next/image';
+import unravel from '../assets/about/about-1.jpg';
 
 export default function About(){
     return(
@@ -8,6 +10,7 @@ export default function About(){
             <Banner prop="ABOUT US"/>
             <div className={styles['about-container']}>
                 <section className={styles['about-church']}>
+                    <Image src={unravel} alt="Unravel Church Image" priority />
                     <h1>Unravel Church</h1>
                     <hr />
                     <p>Our church is a non-denominational church. The doctrine is modeled after the ministry of Jesus, as in the words of the four Gospels.</p>
