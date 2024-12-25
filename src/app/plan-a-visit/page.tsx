@@ -2,11 +2,11 @@ import Image from 'next/image';
 
 import styles from './page.module.css';
 import Banner from '../components/banner';
-import parking from '../assets/parking.jpg';
-import kids from '../assets/kids.jpg';
-import translation from '../assets/translation.jpg';
-import worship from '../assets/worship-2.jpg';
-import family from '../assets/family.jpg';
+import parking from '../assets/plan-a-visit/parking.jpg';
+import kids from '../assets/plan-a-visit/kids.jpg';
+import translation from '../assets/plan-a-visit/translation.jpg';
+import worship from '../assets/plan-a-visit/worship-2.jpg';
+import family from '../assets/plan-a-visit/family.jpg';
 
 export default function PlanAVisit(){
     return(

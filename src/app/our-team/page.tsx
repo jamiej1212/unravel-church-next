@@ -1,8 +1,11 @@
 import Image from 'next/image';
 
 import styles from './page.module.css';
-import pastorKim from '../assets/pastor_1.png';
-import pastorHong from '../assets/pastor_2.png';
+import pastorKim from '../assets/our-team/pastor_kim.png';
+import pastorHong from '../assets/our-team/pastor_hong.png';
+import reverendHong from '../assets/our-team/reverend_hong.png';
+import reverndRoh from '../assets/our-team/revernd_roh.png';
+import ministerKim from '../assets/our-team/minister_kim.png';
 import reverend from '../assets/reverends.jpg';
 import minister from '../assets/ministers.jpg';
 import Banner from '../components/banner';
@@ -56,7 +59,7 @@ export default function OurTeam(){
                 </div>
 
                 <div className={styles['team-desc']}>
-                    <Image className={styles['team-img']} src={minister} alt="Picture of our minister" />
+                    <Image className={styles['team-img']} src={reverndRoh} alt="Picture of our minister" />
                     <div>
                         <h3>Reverend John and Jael Roh</h3>
                         <p>Hello, I&#39;m Minister A, and it&#39;s a privilege to serve alongside you in faith. My goal is to help nurture our spiritual growth and strengthen our community through God&#39;s love and guidance. I look forward to walking with you on this journey of faith and service.</p>
@@ -64,7 +67,7 @@ export default function OurTeam(){
                 </div>
                 
                 <div className={styles['team-desc-two']}>
-                    <Image className={styles['team-img-two']} src={minister} alt="Picture of our minister" />
+                    <Image className={styles['team-img-two']} src={reverendHong} alt="Picture of our minister" />
                     <div>
                         <h3>Reverend Jiwon Hong</h3>
                         <p>Hello, I&#39;m Minister A, and it&#39;s a privilege to serve alongside you in faith. My goal is to help nurture our spiritual growth and strengthen our community through God&#39;s love and guidance. I look forward to walking with you on this journey of faith and service.</p>
@@ -72,7 +75,7 @@ export default function OurTeam(){
                 </div>
 
                 <div className={styles['team-desc']}>
-                    <Image className={styles['team-img']} src={minister} alt="Picture of our minister" />
+                    <Image className={styles['team-img']} src={ministerKim} alt="Picture of our minister" />
                     <div>
                         <h3>Minister Minki Kim</h3>
                         <p>Hello, I&#39;m Minister A, and it&#39;s a privilege to serve alongside you in faith. My goal is to help nurture our spiritual growth and strengthen our community through God&#39;s love and guidance. I look forward to walking with you on this journey of faith and service.</p>

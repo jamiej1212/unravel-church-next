@@ -214,7 +214,7 @@
     }
 
     .sunday-service > div{
-        background-image: url('./assets/sunday_service_bg.png');
+        background-image: url('./assets/main/sunday_service_bg.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

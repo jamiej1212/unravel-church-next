@@ -5,13 +5,13 @@ import Link from "next/link";
 import EventPage from './eventpage/page';
 
 import styles from "./page.module.css";
-import mainOne from './assets/main-1.jpg';
-import mainTwo from './assets/main-2.jpg';
-import mainThree from './assets/main-3.jpg';
-import mainFour from './assets/main-4.jpg';
-import service from './assets/sunday_service.png';
-import experiences from './assets/experiences.jpg';
-import pastors from './assets/pastors.jpg';
+import mainOne from './assets/main/main-1.jpg';
+import mainTwo from './assets/main/main-2.jpg';
+import mainThree from './assets/main/main-3.jpg';
+import mainFour from './assets/main/main-4.jpg';
+import service from './assets/main/sunday_service.png';
+import experiences from './assets/main/experiences.jpg';
+import pastors from './assets/main/pastors.jpg';
 
 // Swiper import
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -52,6 +52,7 @@ export default function Home() {
                 src={image.src}
                 alt={image.alt}
                 className={styles['swiper-image']}
+                priority
               >
               </Image>
             </SwiperSlide>
