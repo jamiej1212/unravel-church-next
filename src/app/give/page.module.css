@@ -1,0 +1,44 @@
+.container{
+    margin: 5% 10%;
+    width: 80%;
+    color: var(--font);
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.flex > div:first-child{
+    flex: 1;
+}
+
+.flex > div:last-child > h1{
+    font-size: 3rem;
+    flex: 2;
+}
+
+.flex img{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.container p{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
+}
+
+@media (min-width: 1024px)
+{
+    .flex{
+        flex-direction: row;
+    }
+}
