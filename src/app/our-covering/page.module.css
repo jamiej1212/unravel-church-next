@@ -1,0 +1,35 @@
+.container{
+    background-image: url('../assets/ourcovering-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin-top: -25px;
+    color: white;
+}
+
+.container > div{
+    padding: 5% 20%;
+    background-color: rgba(37, 37, 37, 0.5);
+}
+
+.container > div > div > h1{
+    padding-bottom: 3%;
+}
+
+.container > div > div > p, .container > div > div > ul{
+    font-size: 1.2rem;
+    padding-bottom: 2%;
+}
+
+.container > div > div > a{
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(to right, var(--darker-foreground), var(--foreground));
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+
+.container > div > div > a:hover{
+    background-image: linear-gradient(var(--darker-foreground), var(--darker-foreground));
+}
