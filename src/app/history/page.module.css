@@ -16,7 +16,7 @@
 .container > div > img{
     width: 100%;
     height: auto;
-    min-width: 300px;
+    min-width: 400px;
     object-fit: cover;
 }
 
@@ -30,6 +30,6 @@
     }
 
     .container > div > img{
-        width: 40%;
+        width: 50%;
     }
 }
