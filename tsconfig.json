@@ -22,7 +22,7 @@
         "@/*": ["./src/*"]
       }
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/eventpage/[id]/page.jsx", "next.config.mjs"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/eventpage/[slug]/page.jsx", "next.config.mjs"],
     "exclude": ["node_modules"]
   }
   
