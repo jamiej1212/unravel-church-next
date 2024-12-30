@@ -1,5 +1,7 @@
 'use client';
 
+import styles from './eventform.module.css';
+
 import { useState, FormEvent } from "react";
 import { addEvents } from "../actions/addevents";
 
@@ -18,18 +20,22 @@ export default function EventForm() {
       if (result.status) {
         setStatus("success");
         e.currentTarget.reset();
-      } else {
+      } 
+    } catch(error) {
+        if(!error) {
+        console.error("Upload failed: ", error);
         setStatus("error");
-      }
-    } catch (error) {
-      console.error("Upload failed:", error);
-      setStatus("error");
+        }
+      
     }
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" name="title" placeholder="Event Title" required />
+    <form onSubmit={handleSubmit} className={styles.container}>
+      <label id="title">Enter the event title</label>
+      <input type="text" name="title" placeholder="Test Event" required />
+      <br/>
+      <label id="image">Select the event photo</label>
       <input
         type="file"
         name="image"
@@ -37,9 +43,18 @@ export default function EventForm() {
         accept="image/png, image/jpg, image/jpeg"
         required
       />
-      <input type="text" name="slug" placeholder="Event Slug" required />
+      <br/>
+      <label id="slug">Enter a name to be used in the event URL.<br/>
+            Whitespace should be replaced with a hyphen.
+      </label>
+      <input type="text" name="slug" placeholder="test-event" required />
+      <br/>
+      <label id="date">Select the event date</label>
       <input type="date" name="date" placeholder="Event Date" required />
-      <textarea name="details" placeholder="Event Details" required />
+      <br/>
+      <label id="details">Enter the event</label>
+      <textarea name="details" placeholder="This is a test event" required />
+      <br/>
       <button type="submit">Submit</button>
 
       {status === "success" && <p>Event submitted successfully!</p>}

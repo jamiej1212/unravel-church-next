@@ -1,0 +1,21 @@
+.container{
+    color: var(--font);
+}
+
+.container > ul{
+    list-style: none;
+}
+
+.container > ul > div > li > a {
+    text-decoration: none;
+    color: var(--font);
+}
+
+.container > ul > div{
+    display: flex;
+}
+
+.container img{
+    width: 50%;
+    height: auto;
+}

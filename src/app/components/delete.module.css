@@ -1,0 +1,7 @@
+.container > button{
+    border: none;
+    color: white;
+    background-color: var(--foreground);
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
