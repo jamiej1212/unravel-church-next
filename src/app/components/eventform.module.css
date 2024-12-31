@@ -1,32 +1,64 @@
 .container{
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     color: var(--font);
 }
 
 .container > input{
     height: 30px;
+    border: 1px solid var(--font);
+    border-radius: 5px;
+}
+
+.container > textarea{
+    height: 70px;
+    border: 1px solid var(--font);
+    border-radius: 5px;
+}
+
+.container > input[type="file"]{
+    border: none;
 }
 
 .container > button{
-    margin-left: 100px;
-    margin-right: 100px;
     text-align: center;
     border: none;
     background-color: var(--foreground);
     color: white;
     height: 50px;
     border-radius: 10px;
-    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container > button:hover{
+    background-color: var(--darker-foreground);
+}
+
+.container > button:active{
+    background-color: rgb(71, 77, 67);
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.5);
 }
 
 .container > label{
     margin-bottom: 10px;
-    font-size: 1.1rem;
 }
 
-.container > input[type="file"]{
-    border: none;
+@media(min-width: 1024px){
+    .container{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    .container > button{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.2rem;
+        padding: 0 3rem;
+    }
+    
+    .container > label{
+        font-size: 1.1rem;
+    }
 }

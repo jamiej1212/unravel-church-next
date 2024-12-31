@@ -5,3 +5,12 @@
     padding: .5rem 1rem;
     border-radius: 10px;
 }
+
+.container > button:hover{
+    background-color: var(--darker-foreground);
+}
+
+.container > button:active{
+    background-color: rgb(71, 77, 67);
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.5);
+}
