@@ -6,12 +6,12 @@
     list-style: none;
 }
 
-.container > ul > div > li > a {
+.container > ul > li > a {
     text-decoration: none;
     color: var(--font);
 }
 
-.container > ul > div{
+.container > ul {
     display: flex;
 }
 

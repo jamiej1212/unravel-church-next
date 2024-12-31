@@ -22,6 +22,8 @@ export default function EventList() {
     const fetchEvents = async () => {
       const result = await getEvents();
 
+      console.log('API result:', result);
+
       if (result.status) {
         if (result.data) {
           setEvents(result.data); // Set event list
@@ -34,6 +36,7 @@ export default function EventList() {
     };
 
     fetchEvents();
+    console.log('DB_HOST:', process.env.NEXT_PUBLIC_DB_HOST_END_POINT);
   }, []);
 
   if (error) {
@@ -48,15 +51,17 @@ export default function EventList() {
       ) : (
         <ul>
           {events.map((event) => (
-            <div>
-              <li key={event.id}>
+            <li key={event.id}>
               <Link href={`/eventpage/${event.slug}`}>
                 <h2>{event.title}</h2>
-                <img src={event.image} alt={event.title} width={100} />
-                <p>{event.details}</p>
+                <img
+                  src={event.image || '/default-image.png'} // 이미지가 없으면 기본 이미지 사용
+                  alt={event.title}
+                  width={100}
+                />
+                <p>{event.details || 'No details available'}</p> {/* 세부 정보가 없으면 기본 텍스트 */}
               </Link>
             </li>
-            </div>
           ))}
         </ul>
       )}
