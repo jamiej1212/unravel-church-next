@@ -18,7 +18,9 @@ export async function getEvents() {
     const [rows] = await database.execute(
       "SELECT id, title, image, slug, date, details FROM events ORDER BY date DESC"
     );
-    
+    console.log('Rows from database:', rows);
+    console.log('Rows:', rows);
+
     // Cast RowDataPacket[] to Event[] type
     const events = rows as Event[];
 
@@ -33,12 +35,22 @@ export async function getEvents() {
       status: true,
       data: events,
     };
-  } catch (err) {
-    console.error('Error fetching events:', err);
-    return {
-      status: false,
-      error: 'Failed to fetch events',
-    };
+  } catch (err: unknown) {
+    if(err instanceof Error)
+    {
+      console.error('Error fetching events:', err.message);
+      return {
+        status: false,
+        error: 'Failed to fetch events',
+      };
+    }else{
+      console.error('Unknown error: ', err)
+      return{
+        status: false,
+        error: "Failed to fetch events due to an unknown error."
+      }
+    }
+    
   }
 }
 
