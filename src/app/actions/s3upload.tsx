@@ -2,17 +2,17 @@ import { S3Client, PutObjectCommand, PutObjectCommandInput, DeleteObjectCommand 
 
 // Initialize AWS S3 instance
 const s3 = new S3Client({
-  region: process.env.AWS_REGION!,
+  region: process.env.UC_AWS_REGION!,
   credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
+    accessKeyId: process.env.UC_AWS_ACCESS_KEY_ID!,
+    secretAccessKey: process.env.US_AWS_SECRET_ACCESS_KEY!,
   },
 });
 
 // Upload file to S3
 export async function uploadToS3(fileBuffer: Buffer, fileName: string) {
   const params: PutObjectCommandInput = {
-    Bucket: process.env.AWS_BUCKET_NAME!,
+    Bucket: process.env.UC_AWS_BUCKET_NAME!,
     Key: `uploads/${fileName}`,
     Body: fileBuffer,
     ContentType: 'image/jpeg', // Adjust as needed based on file type
@@ -24,7 +24,7 @@ export async function uploadToS3(fileBuffer: Buffer, fileName: string) {
 
     return {
       status: true,
-      fileUrl: `https://${process.env.AWS_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/uploads/${fileName}`,
+      fileUrl: `https://${process.env.UC_AWS_BUCKET_NAME}.s3.${process.env.UC_AWS_REGION}.amazonaws.com/uploads/${fileName}`,
     };
   } catch (err) {
     console.error('Error uploading file to S3:', err);
@@ -35,7 +35,7 @@ export async function uploadToS3(fileBuffer: Buffer, fileName: string) {
 // Delete file from S3
 export async function deleteFromS3(fileName: string) {
   const params = {
-    Bucket: process.env.AWS_BUCKET_NAME!,
+    Bucket: process.env.UC_AWS_BUCKET_NAME!,
     Key: `uploads/${fileName}`,
   };
 
